@@ -1,0 +1,12 @@
+<div class='city'>{{city}}</div>
+<div class='temperature'>
+  <span class='value'>{{displayTemp}}</span>&deg;{{displayType}}
+</div>
+
+<button class='show-c'
+        {{action "showCelsius"}}
+        disabled={{displayingC}}>C</button>
+
+<button class='show-f'
+        {{action "showFahrenheit"}}
+        disabled={{displayingF}}>F</button>
