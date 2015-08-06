@@ -33,10 +33,12 @@ export default Ember.Component.extend({
   actions: {
     showCelsius() {
       this.set('displayAs', CELSIUS);
+      this.sendAction('unitChangedAction', FAHRENHEIT);
     },
 
     showFahrenheit() {
       this.set('displayAs', FAHRENHEIT);
+      this.sendAction('unitChangedAction', FAHRENHEIT);
     },
   }
 });
